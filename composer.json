@@ -1,0 +1,25 @@
+{
+    "name": "convenient/magento-composer-installer-issue",
+    "require": {
+        "magento/magento2-base": "2.3.0",
+        "magento/magento-composer-installer": "0.1.13"
+    },
+    "repositories": {
+        "composerinstaller": {
+            "type": "git",
+            "url": "https://github.com/convenient/magento-composer-installer"
+        },
+        "foomanmirror": {
+            "type": "composer",
+            "url": "https://repo-magento-mirror.fooman.co.nz/"
+        }
+    },
+    "extra": {
+        "magento-force": "override",
+        "magento-deploy-ignore": {
+            "*": [
+                "/pub/index.php"
+            ]
+        }
+    }
+}
